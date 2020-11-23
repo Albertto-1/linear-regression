@@ -5,8 +5,8 @@ from sklearn.metrics import mean_squared_error
 import numpy as np
 import math
 
-# X,y = getDataXandY()
-X,y = getDataXandY('carprice.csv')
+X,y = getDataXandY()
+# X,y = getDataXandY('carprice.csv')
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=45)
 
 # Setup the data
@@ -25,7 +25,7 @@ lin_reg.fit(X_train,y_train)
 # Predict
 y_pred = lin_reg.predict(X_test)
 # Mean Square Error
-mse = mean_squared_error(y_pred, y_test)
+mse = mean_squared_error(y_test, y_pred)
 print('MSE: ', mse)
 
 # print(y_test)

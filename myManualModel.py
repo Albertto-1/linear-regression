@@ -1,5 +1,5 @@
 import numpy as np
-
+from sklearn.metrics import mean_squared_error
 class ManualLinearRegression:
     def __init__(self, num_features):
         self.num_features = num_features
@@ -12,8 +12,9 @@ class ManualLinearRegression:
         return y
     
     def compute_loss(self, y, y_true):
-        loss = np.sum(np.square(y - y_true))
-        return loss/(2*y.shape[0])
+        # loss = np.sum(np.square(y - y_true))
+        # return loss/(2*y.shape[0])
+        return mean_squared_error(y_true, y)
     
     def calculate_gradients(self, X, y_true, y_hat):
         m = y_hat.shape[0]

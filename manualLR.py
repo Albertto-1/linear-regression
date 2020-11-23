@@ -1,10 +1,10 @@
 from extract import getDataXandY
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
 from myManualModel import ManualLinearRegression
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-
 
 X,y = getDataXandY()
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=45)
@@ -25,7 +25,7 @@ losses = lin_reg.train(X_train, y_train, 10000, 5e-5)
 # Predict
 y_pred = lin_reg.predict(X_test)
 # Mean Square Error
-mse = lin_reg.compute_loss(y_pred, y_test)
+mse = mean_squared_error(y_test, y_pred)
 print('MSE: ', mse)
 
 # # print(y_test)

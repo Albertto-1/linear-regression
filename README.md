@@ -67,7 +67,7 @@ I put an iteration limit in the train function and defined learning rate to be _
 
 ### 3. Implementing framework and manual models.
 
-To this point I alrready have everything I need to implement this models.
+To this point I already have everything I need to implement this models.
 The steps that both implementations follow are:
 1. Get the respective data.
 2. Split the data in _train_ and _test_.

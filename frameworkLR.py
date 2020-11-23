@@ -4,6 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import numpy as np
 import math
+from sklearn import metrics
 
 X,y = getDataXandY()
 # X,y = getDataXandY('carprice.csv')
@@ -27,6 +28,8 @@ y_pred = lin_reg.predict(X_test)
 # Mean Square Error
 mse = mean_squared_error(y_test, y_pred)
 print('MSE: ', mse)
+rmse = metrics.mean_absolute_error(y_test, y_pred)
+print('RMSE: ', rmse)
 
 # print(y_test)
 # print(y_pred)

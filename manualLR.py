@@ -5,6 +5,7 @@ from myManualModel import ManualLinearRegression
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+from sklearn import metrics
 
 X,y = getDataXandY()
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=45)
@@ -27,6 +28,8 @@ y_pred = lin_reg.predict(X_test)
 # Mean Square Error
 mse = mean_squared_error(y_test, y_pred)
 print('MSE: ', mse)
+rmse = metrics.mean_absolute_error(y_test, y_pred)
+print('RMSE: ', rmse)
 
 # # print(y_test)
 # # print(y_pred)

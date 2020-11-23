@@ -42,6 +42,7 @@ My manual Linear regression implementation is based in the *Amit Yadavs* course 
 This manual implementation is using [Gradient Descent (GD)](https://en.wikipedia.org/wiki/Gradient_descent#:~:text=Gradient%20descent%20is%20a%20first,function%20at%20the%20current%20point.) optimization method.
 
 **Process:**
+
 The first step was to initialize the model Weights (W) and the b. based on the number of params of the dataset. --> __init()__
 For the W, I decided to initialize them with ones.
 For the b, I decided to initialize it with one.

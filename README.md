@@ -44,10 +44,14 @@ This manual implementation is using [Gradient Descent (GD)](https://en.wikipedia
 **Process:**
 
 The first step was to initialize the model Weights (W) and the b. based on the number of params of the dataset. --> __init()__
+
 For the W, I decided to initialize them with ones.
 For the b, I decided to initialize it with one.
 I decided this because this initialization was giving better results than random initialization.
+
 For more information about initializing W click [here](https://towardsdatascience.com/weight-initialization-techniques-in-neural-networks-26c649eb3b78) or [here](https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#initialize-weights).
+
+
 
 Then I need to implement GD. The gradient descent algorithm can be simplified in 4 steps:
 

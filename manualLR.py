@@ -18,19 +18,19 @@ y_test = np.reshape(y_test.values, (y_test.shape[0], 1))
 # Init the model
 lin_reg = ManualLinearRegression(X.shape[1])
 # Train the model
-losses = lin_reg.train(X_train, y_train, 10000, 3e-5)
+losses = lin_reg.train(X_train, y_train, 10000, 5e-5)
 
 # plt.plot(losses)
 # plt.show()
 # Predict
-y_pred = lin_reg.forward_pass(X_test)
+y_pred = lin_reg.predict(X_test)
 # Mean Square Error
 mse = lin_reg.compute_loss(y_pred, y_test)
 print('MSE: ', mse)
 
 # # print(y_test)
 # # print(y_pred)
-# print((lin_reg.forward_pass([[22,29.5,0,0,1,1,0,0,0,1,0]])[0]))
+# print((lin_reg.predict([[22,29.5,0,0,1,1,0,0,0,1,0]])[0]))
 index=0
 print('Pred:\t|\tReal:')
 for i in range(index,index+10):

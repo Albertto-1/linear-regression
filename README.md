@@ -30,7 +30,7 @@ In the folder datasets/ you can find carprice.csv and insurance.csv. The extract
 
 ## Process
 
-Feel free to check the code fore more detail of the implementation in each step of the process.
+Feel free to check the code for more detail of the implementation in each step of the process.
 
 ### 1. Data analysis and transformation
 

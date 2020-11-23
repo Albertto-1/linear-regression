@@ -30,6 +30,8 @@ In the folder datasets/ you can find carprice.csv and insurance.csv. The extract
 
 ## Process
 
+Feel free to check the code fore more detail of the implementation in each step of the process.
+
 ### 1. Data analysis and transformation
 
 The process of analysing and transforming the data can be found in this [Google Colab notebook](https://colab.research.google.com/drive/1fFKCOdDQsuNb6ke2-zwIkS1005RHJMxL?usp=sharing).
